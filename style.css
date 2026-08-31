@@ -454,9 +454,9 @@ span.venue, span.highlight { padding-right: 0; font-size: 0.95em; }
   .heading .right-cols .info .role-line { text-align: center; }
   .heading .right-cols .info p { text-align: center; }
 
-  /* mission */
+  /* mission: wrap into multiple lines on mobile */
   .mission-flow-row { flex-direction: column; align-items: flex-start; gap: 8px; }
-  .mission-flow { justify-content: flex-start; }
+  .mission-flow { flex-wrap: wrap; overflow-x: visible; justify-content: flex-start; }
 
   /* publications: stack image above text */
   .publication { flex-direction: column; align-items: stretch; padding: 12px; }
