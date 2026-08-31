@@ -216,8 +216,7 @@ main.body { margin-top: 50px; }
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  flex-wrap: wrap;
   gap: 3px;
   flex: 1;
   min-width: 0;
@@ -263,16 +262,16 @@ main.body { margin-top: 50px; }
 }
 .agi-num {
   position: absolute;
-  right: 14px;
-  width: 1.2em;
+  right: 12px;
+  width: 1.4em;
   text-align: center;
   top: 50%;
-  transform: translateY(-50%);
-  font-size: 3.6em;
+  transform: translateY(-50%) rotate(90deg);
+  font-size: 4.2em;
   line-height: 1;
   font-weight: 700;
-  color: rgba(15, 52, 96, 0.07);
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7), 0 2px 8px rgba(15, 52, 96, 0.18);
+  color: rgba(26, 95, 180, 0.14);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8), 0 3px 10px rgba(26, 95, 180, 0.28);
   pointer-events: none;
   user-select: none;
 }
@@ -456,7 +455,7 @@ span.venue, span.highlight { padding-right: 0; font-size: 0.95em; }
 
   /* mission: wrap into multiple lines on mobile */
   .mission-flow-row { flex-direction: column; align-items: stretch; gap: 8px; }
-  .mission-flow { flex-wrap: wrap; overflow-x: visible; justify-content: flex-start; width: 100%; }
+  .mission-flow { flex-wrap: wrap; justify-content: flex-start; width: 100%; }
 
   /* publications: stack image above text */
   .publication { flex-direction: column; align-items: stretch; padding: 12px; }
@@ -473,8 +472,8 @@ span.venue, span.highlight { padding-right: 0; font-size: 0.95em; }
   .edu-item img, .logo-chip { width: 36px; height: 36px; }
 
   /* direction cards */
-  .agi-card { padding: 12px 14px; padding-right: 46px; }
-  .agi-num { font-size: 2.4em; right: 8px; }
+  .agi-card { padding: 12px 14px; padding-right: 52px; }
+  .agi-num { font-size: 3em; right: 8px; }
 
   /* section titles & banners */
   .content > .title { font-size: 1.25em; padding: 6px 12px; }
