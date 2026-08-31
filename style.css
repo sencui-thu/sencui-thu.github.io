@@ -193,6 +193,123 @@ main.body { margin-top: 50px; }
 }
 .recruit-note b { color: #c0392b; }
 
+/* Mission section: statement + ASI roadmap arrow. */
+.mission-statement {
+  font-size: 0.98em;
+  font-style: italic;
+  text-align: center;
+  font-weight: 500;
+  background: #f8fafc;
+  border: 1px solid #e3e9f0;
+  border-radius: 8px;
+  padding: 12px 18px;
+  margin: 0 0 14px;
+}
+.mission-statement b { color: #003366; }
+.mission-flow-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 10px 0 14px;
+}
+.mission-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 3px;
+  flex: 1;
+  min-width: 0;
+}
+.m-question {
+  font-weight: 700;
+  color: #003366;
+  white-space: nowrap;
+  font-size: 0.95em;
+}
+.m-step {
+  background: #f4f7fb;
+  border: 1px solid #dde5ef;
+  border-radius: 6px;
+  padding: 4px 7px;
+  font-weight: 600;
+  font-size: 0.78em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.m-step.asi {
+  background: #003366;
+  border-color: #003366;
+  color: #ffffff;
+}
+.m-arrow { color: #0055AA; font-weight: 700; font-size: 0.85em; flex-shrink: 0; }
+
+/* Physical AGI directions — restrained academic card style. */
+.agi-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 16px 0;
+}
+.agi-card {
+  position: relative;
+  padding: 14px 18px;
+  padding-right: 72px;
+  background: #fafbfc;
+  border: 1px solid #e8ecf1;
+  border-left: 3px solid #c9d4e3;
+  border-radius: 8px;
+}
+.agi-num {
+  position: absolute;
+  right: 14px;
+  width: 1.2em;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3.6em;
+  line-height: 1;
+  font-weight: 700;
+  color: rgba(15, 52, 96, 0.07);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7), 0 2px 8px rgba(15, 52, 96, 0.18);
+  pointer-events: none;
+  user-select: none;
+}
+.agi-card h3 .fa { margin-right: 6px; }
+.agi-card:nth-child(1) {
+  border-left-color: #1a5fb4;
+  background: linear-gradient(180deg, #f4f8fc, #fafbfc);
+}
+.agi-card:nth-child(2) {
+  border-left-color: #0e7c6b;
+  background: linear-gradient(180deg, #f1f8f6, #fafbfc);
+}
+.agi-card:nth-child(3) {
+  border-left-color: #5b5bd6;
+  background: linear-gradient(180deg, #f5f4fc, #fafbfc);
+}
+.agi-card:nth-child(4) {
+  border-left-color: #b45309;
+  background: linear-gradient(180deg, #fbf6ef, #fafbfc);
+}
+.agi-card h3 {
+  margin: 0 0 6px;
+  font-size: 1.02em;
+  color: #0f3460;
+}
+.agi-q {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 0.92em;
+  color: #52606d;
+}
+.agi-k {
+  margin: 2px 0 0;
+  font-size: 0.9em;
+  color: #6b7686;
+}
+
 /* Scrollable news box: fixed height, internal scroll shows all items. */
 .news-box {
   height: 160px;
@@ -210,9 +327,10 @@ main.body { margin-top: 50px; }
   list-style: none;
 }
 .news-list li {
+  font-family: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
   padding: 6px 0;
   border-bottom: 1px dashed #e0e4e8;
-  font-size: 0.95em;
+  font-size: 0.9em;
 }
 .news-list li:last-child { border-bottom: none; }
 .news-date {
