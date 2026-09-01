@@ -497,23 +497,3 @@ span.venue, span.highlight { padding-right: 0; font-size: 0.95em; }
   .news-box { height: 140px; }
   .pub-title { font-size: 1em; }
 }
-
-/* Site footer with visit counter. */
-.site-footer {
-  text-align: center;
-  padding: 18px 12px;
-  color: #6b7686;
-  font-size: 0.9em;
-  border-top: 1px solid #e8ecf1;
-  margin-top: 10px;
-}
-.visitor-map { margin-top: 12px; }
-/* Site footer with visit counter. */
-.site-footer {
-  text-align: center;
-  padding: 18px 12px;
-  color: #6b7686;
-  font-size: 0.9em;
-  border-top: 1px solid #e8ecf1;
-  margin-top: 10px;
-}
