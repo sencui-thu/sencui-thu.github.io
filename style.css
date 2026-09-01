@@ -181,14 +181,12 @@ main.body { margin-top: 50px; }
   margin-bottom: 4px;
 }
 .heading .right-cols .info .fa { margin-right: 5px; }
-/* Recruiting note: noticeable but not overpowering red theme. */
+/* Recruiting note: bold headline inside the unified recruit box. */
 .recruit-note {
-  background: #fdecec;
-  border: 1px solid #f3c9c9;
-  border-left: 5px solid #e05a50;
-  padding: 12px 16px;
-  border-radius: 6px;
-  font-size: 1.05em;
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  border-bottom: 1px dashed #f0c0c0;
+  font-size: 1.02em;
   color: #4a2b29;
 }
 .recruit-note b { color: #c0392b; }
@@ -446,8 +444,6 @@ span.venue, span.highlight { padding-right: 0; font-size: 0.95em; }
 
 .anchor { border-top: 50px solid transparent; margin-top: -50px; scroll-margin-top: 50px; }
 
-.recruit { display: none; }
-
 /* Mobile responsiveness: stack columns, keep images (reference: Yiming Li). */
 @media only screen and (max-width: 800px) {
   body { font-size: 15px; }
@@ -524,46 +520,31 @@ span.venue, span.highlight { padding-right: 0; font-size: 0.95em; }
   .pub-title { font-size: 1em; }
 }
 
-/* Detailed recruiting section: role cards. */
-.recruit-block { margin: 0 0 14px; }
-.recruit-roles {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin: 12px 0;
-}
-.recruit-card {
-  background: #fdf1f1;
+/* Recruiting section: single unified box (note + list + apply). */
+.recruit-block {
+  margin: 0 0 14px;
+  background: #fdf6f6;
   border: 1px solid #f3c9c9;
+  border-left: 5px solid #e05a50;
   border-radius: 8px;
-  padding: 14px 16px;
+  padding: 14px 18px;
 }
-.recruit-card h4 {
-  margin: 0 0 8px;
-  font-size: 1em;
-  color: #c0392b;
-}
-.recruit-card ul {
+.recruit-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.recruit-card li {
-  font-size: 0.88em;
+.recruit-list li {
+  font-size: 0.92em;
   color: #4a2b29;
-  margin: 4px 0;
-  line-height: 1.5;
+  margin: 5px 0;
+  line-height: 1.55;
 }
-.recruit-card li b { color: #c0392b; }
+.recruit-list li b { color: #c0392b; }
 .recruit-apply {
-  background: #fdecec;
-  border-left: 4px solid #e05a50;
-  border-radius: 4px;
-  padding: 10px 14px;
+  margin: 10px 0 0;
+  padding: 10px 0 0;
+  border-top: 1px dashed #f0c0c0;
   font-size: 0.95em;
   color: #4a2b29;
-  margin: 12px 0 0;
-}
-@media only screen and (max-width: 800px) {
-  .recruit-roles { grid-template-columns: 1fr; }
 }
