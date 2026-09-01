@@ -471,7 +471,7 @@ span.venue, span.highlight { padding-right: 0; font-size: 0.95em; }
   /* hero: stack vertically, center */
   .heading { flex-direction: column; align-items: center; padding: 20px 0; }
   .heading .img { max-width: 100%; padding: 0 0 14px; }
-  .heading .img img { width: 160px; }
+  .heading .img img { width: 220px; }
   .heading .right { width: 100%; }
   .heading .right h1 { font-size: 1.9em; margin-left: 0; }
   .heading .right-cols { flex-direction: column; gap: 14px; align-items: center; }
@@ -527,7 +527,7 @@ span.venue, span.highlight { padding-right: 0; font-size: 0.95em; }
 /* Very small screens: tighter spacing */
 @media only screen and (max-width: 420px) {
   .header-inner .ftsubheader { font-size: 0.85em; padding: 0 5px; }
-  .heading .img img { width: 140px; }
+  .heading .img img { width: 180px; }
   .m-step { font-size: 0.68em; padding: 3px 5px; }
   .news-box { height: 140px; }
   .pub-title { font-size: 1em; }
