@@ -118,7 +118,7 @@ span.tag a::after { content: "]"; text-decoration: none; }
   vertical-align: middle;
   max-width: 1000px;
 }
-.header, .container, main { min-width: 330px; }
+.header, .container, main { width: 100%; }
 .img, .text { padding-left: 10px; padding-right: 10px; }
 .header { line-height: 50px; }
 
@@ -473,10 +473,10 @@ span.venue, span.highlight { padding-right: 0; font-size: 0.95em; }
   .heading .right-cols { flex-direction: column; gap: 14px; align-items: center; }
   .heading .right-cols .text { width: 100%; text-align: center; padding: 0; }
   .heading .right-cols .text ul {
-    display: inline-block;
+    width: fit-content;
+    margin: 0 auto;
     text-align: left;
     padding-left: 1.4em;
-    width: auto;
   }
   .heading .right-cols .info .role-line { text-align: center; }
   .heading .right-cols .info p { text-align: center; }
