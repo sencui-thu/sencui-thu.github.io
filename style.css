@@ -477,7 +477,7 @@ span.venue, span.highlight { padding-right: 0; font-size: 0.95em; }
   .heading .right-cols { flex-direction: column; gap: 14px; align-items: center; }
   .heading .right-cols .text { width: 100%; text-align: center; padding: 0; }
   .heading .right-cols .text ul {
-    width: fit-content;
+    display: table;
     margin: 0 auto;
     text-align: left;
     padding-left: 1.4em;
