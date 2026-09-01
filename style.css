@@ -497,3 +497,47 @@ span.venue, span.highlight { padding-right: 0; font-size: 0.95em; }
   .news-box { height: 140px; }
   .pub-title { font-size: 1em; }
 }
+
+/* Detailed recruiting section: role cards. */
+.recruit-block { margin: 0 0 14px; }
+.recruit-roles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 12px 0;
+}
+.recruit-card {
+  background: #fdf1f1;
+  border: 1px solid #f3c9c9;
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+.recruit-card h4 {
+  margin: 0 0 8px;
+  font-size: 1em;
+  color: #c0392b;
+}
+.recruit-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.recruit-card li {
+  font-size: 0.88em;
+  color: #4a2b29;
+  margin: 4px 0;
+  line-height: 1.5;
+}
+.recruit-card li b { color: #c0392b; }
+.recruit-apply {
+  background: #fdecec;
+  border-left: 4px solid #e05a50;
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-size: 0.95em;
+  color: #4a2b29;
+  margin: 12px 0 0;
+}
+@media only screen and (max-width: 800px) {
+  .recruit-roles { grid-template-columns: 1fr; }
+}
