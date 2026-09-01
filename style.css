@@ -1,3 +1,6 @@
+/* Global border-box: width includes padding/borders so 100% never overflows. */
+*, *::before, *::after { box-sizing: border-box; }
+
 /* Self-hosted Inter (latin) — pretty and highly legible. */
 @font-face {
   font-family: "Inter";
