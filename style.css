@@ -475,10 +475,15 @@ span.venue, span.highlight { padding-right: 0; font-size: 0.95em; }
   .heading .right { width: 100%; }
   .heading .right h1 { font-size: 1.9em; margin-left: 0; }
   .heading .right-cols { flex-direction: column; gap: 14px; align-items: center; }
-  .heading .right-cols .text { width: 100%; text-align: center; padding: 0; }
+  .heading .right-cols .text {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .heading .right-cols .text ul {
-    display: table;
-    margin: 0 auto;
     text-align: left;
     padding-left: 1.4em;
   }
