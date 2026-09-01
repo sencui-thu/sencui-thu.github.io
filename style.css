@@ -418,6 +418,32 @@ main.body { margin-top: 50px; }
 span.venue, span.highlight { padding-right: 0; font-size: 0.95em; }
 .publication span.tag { padding-right: 0; font-size: 0.95em; }
 
+/* People */
+.people-list {
+  margin-top: 14px;
+  background: #f6f8fa;
+  border: 1px solid #e8ecf1;
+  border-radius: 8px;
+  padding: 4px 18px;
+}
+.person {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 20px;
+  padding: 11px 2px;
+  border-bottom: 1px solid #e8ecf1;
+}
+.person:last-child { border-bottom: none; }
+.p-name {
+  font-weight: 700;
+  color: #003366;
+  min-width: 130px;
+}
+.p-meta { color: #6b7686; }
+.p-work { color: #444; }
+.p-work a { color: #0055AA; }
+
 .anchor { border-top: 50px solid transparent; margin-top: -50px; scroll-margin-top: 50px; }
 
 .recruit { display: none; }
