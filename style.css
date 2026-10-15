@@ -443,6 +443,7 @@ span.venue, span.highlight { padding-right: 0; font-size: 0.95em; }
   color: #003366;
   min-width: 130px;
 }
+.p-name a { color: inherit; }
 .p-meta { color: #6b7686; }
 .p-work { color: #444; }
 .p-work a { color: #0055AA; }
