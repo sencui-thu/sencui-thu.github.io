@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sencui-thu.github.io/sitemap.xml
