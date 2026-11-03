@@ -335,6 +335,15 @@ main.body { margin-top: 50px; }
   font-size: 0.9em;
 }
 .news-list li:last-child { border-bottom: none; }
+/* Highlighted news item: light yellow band with accent bar. */
+.news-list li.news-hl {
+  background: #fff8dc;
+  border-left: 4px solid #e0b93c;
+  border-bottom: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin: 6px 0;
+}
 .news-date {
   font-weight: 600;
   color: #003366;
